@@ -1,0 +1,30 @@
+
+
+val = [];
+
+roe = [];
+
+colum = [];
+
+
+for r = 1:100
+    
+    [C l m] = HTCircle(BW,r);
+    
+    val = [val; C];
+    
+    roe = [roe; l];
+    
+    colum = [colum; 1];
+    
+end
+
+[dummy,temp1] = max(val);
+
+row = roe(temp1);
+
+column = colum(temp1);
+
+radi = temp1+10;
+
+keyboard();
