@@ -79,14 +79,18 @@ im2 = im;
 
 
 
-% for i =1:length(xp);
-%     
-%    
-% im2(xp(i),yp(i))=255;             %%% dislaying circle
-% 
-% im2(xs(i),ys(i))=255;
-% end
-%figure, imshow(im2)
+for i =1:length(xp);
+    
+   
+im2(xp(i),yp(i),1)=255;             %%% dislaying circle
+im2(xp(i),yp(i),2)=0;    
+im2(xp(i),yp(i),3)=0;    
+
+im2(xs(i),ys(i),1)=255;
+im2(xs(i),ys(i),2)=0;
+im2(xs(i),ys(i),3)=0;
+end
+% figure, imshow(im2)
 
 
 end
