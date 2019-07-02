@@ -15,23 +15,6 @@ N_I = normalization(im,xp,xs,yp,ys);
 
 
 
-N_I(32:64,120:200) = 0;
-
-N_I(32:64,1:20) = 0;
-
-N_I(32:64,300:320) = 0;
-
-
- for i =1:64
- for j = 1:320
- 
- if ((N_I(i,j) < 90))
- 
- N_I(i,j) = 0;
- end
- end
- end
-
  
  N = histeq(N_I);
 
