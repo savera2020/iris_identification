@@ -11,9 +11,9 @@ img1  = imread('/home/lord/IRIS_recognition/data_sets/IITD_database/IITD Databas
 
 %input_image = '/home/lord/IRIS_recognition/codes/program_iris_final/images/';
 
-folders  = '/home/lord/IRIS_recognition/data_sets/IITD_database/IITD Database/'
+folders  = '/home/lord/IRIS_recognition/data_sets/IITD_database/IITD Database/';
 
-out_folder = '/home/lord/IRIS_recognition/Output_segmentation/IIITD/'
+out_folder = '/home/lord/IRIS_recognition/Output_segmentation/IIITD/';
 for count =  1 :224
     
     input_image = strcat(folders , num2str(count,'%03.f'),'/') ;
